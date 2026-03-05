@@ -1,0 +1,80 @@
+/* Navbar */
+header {
+  background-color: #b00000 !important;
+}
+
+header a,
+header span {
+  color: white !important;
+  font-weight: 500;
+}
+
+/* Hover */
+header a:hover {
+  color: #ffdddd !important;
+}
+
+/* Hero Section */
+.prose h1 {
+  color: #b00000;
+  font-weight: 700;
+}
+
+/* Buttons */
+.button,
+.btn,
+a[href*="join"] {
+  background-color: #b00000 !important;
+  color: white !important;
+  padding: 10px 22px;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.button:hover,
+.btn:hover,
+a[href*="join"]:hover {
+  background-color: #800000 !important;
+}
+
+/* Footer */
+footer {
+  background-color: #111 !important;
+  color: white !important;
+}
+
+/* Remove weird borders */
+* {
+  border-color: transparent !important;
+}
+/* Engineering Background */
+
+body {
+  background: url('/images/engineering-bg.svg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* dark overlay */
+
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.55);
+  z-index:-1;
+}
+
+/* fix footer position */
+
+html, body {
+  height:100%;
+}
+
+body{
+  display:flex;
+  flex-direction:column;
+}
+
+main{
+  flex:1;
+}
